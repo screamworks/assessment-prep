@@ -59,12 +59,12 @@ remove(anakinSkywalker);
 
 //14. Create a function called finder that takes in an array and a string and loops through the array
 //    to remove every instance of that string
-function finder(arr, string){
-  for(var i = 0; i < arr.length; i++){
-    if(arr[i] === string){
-      arr.splice[arr[i], 1]
-    }
+function finder(arr, str){
+for(var i = 0; i < arr.length; i++){
+  if(arr[i] === str){
+     arr[i].splice(i,1)
   }
+}
   return arr;
 }
 
@@ -77,28 +77,33 @@ function numChecker(num) {
     return true
 };
 
+parseint(12)
+
 
 //16. Write a function called rightNow that returns a new date object
 function rightNow(){
-  var date = new Date()
-  return date
-};
-
+  return new Date();
+}
 
 //17. Write a function called whoAmI that takes in an object and returns the value of the
 //    object's name property, and if the object's name
 //    is undefined, return 'has amnesia'.
 function whoAmI(obj){
-    if(obj.name === undefined){
-      return 'has amnesia'
-    } else {
-      return obj.name
-    }
+  if(obj.name === undefined){return "has amnesia"}
+  return obj.name
 }
+
 
 //18. Write a function called returnMe that takes in a num and a callback function and
 //    returns the result of the callback function invoked with the num as a parameter
 
-function returnMe (num, cb){
-  return cb(num)
-};
+function wow(cool){
+  return cool;
+}
+
+
+function returnMe(num, cb){
+  return cb(num);
+}
+
+returnMe(25,wow);
